@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Paweł Marchacz Portfolio</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css">
+    </noscript>
+</head>
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper" class="fade-in">
+
+        <!-- Intro -->
+        <div id="intro">
+            <h1>Paweł Marchacz<br>Portfolio</h1>
+            <p></p>
+        </div>
+
+        <!-- Navigation -->
+        <nav id="nav">
+            <ul class="links">
+                <li class="active"><a href="index.html">About Me</a></li>
+                <li><a href="generic.html">Projects</a></li>
+            </ul>
+            <ul class="icons">
+                <li><a href="https://www.linkedin.com/in/pawe%C5%82-marchacz-30146b2a1/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                <li><a href="https://github.com/PawelMarchacz" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+            <!-- Featured Post -->
+            <article class="post featured">
+                <header class="major">
+                    <span class="date">December 01, 2004</span>
+                    <h2>About Me</h2>
+                    <p>I am a computer science student. On this website you can see my projects in which I demonstrate my skills by using the tools and techniques I have learned. I currently work with Python, SQL, PowerBI, Tableau, and Excel, while also actively learning new tools.</p>
+                </header>
+                <div class="image main"><img src="images/what-does-a-data-analyst-do-2022-career-guide.png" alt="Data Analyst"></div>
+            </article>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <section class="split contact">
+                <section>
+                    <h3>Phone</h3>
+                    <p>+48 570-143-319</p>
+                </section>
+                <section>
+                    <h3>Email</h3>
+                    <p><a href="mailto:pawelmarchacz12@gmail.com">pawelmarchacz12@gmail.com</a></p>
+                </section>
+                <section>
+                    <h3>Social</h3>
+                    <ul class="icons">
+                        <li><a href="https://www.linkedin.com/in/pawe%C5%82-marchacz-30146b2a1/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                        <li><a href="https://github.com/PawelMarchacz" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                    </ul>
+                </section>
+            </section>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            let intro = document.getElementById('intro');
+            let lastScrollTop = 0;
+    
+            window.addEventListener('scroll', function() {
+                let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+                if (scrollTop > lastScrollTop) {
+                    intro.classList.add('hidden');
+                } else {
+                    intro.classList.remove('hidden');
+                }
+    
+                lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+            }, false);
+        });
+    </script>
+
+</body>
+</html>
